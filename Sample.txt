@@ -1,1 +1,146 @@
-Gokul
+1. Developer 1: Candidate Flow & User-Facing Pages
+Responsible for:
+
+Guest/Landing
+
+Auth (Login/Signup)
+
+Onboarding (Candidate)
+
+Candidate Dashboard
+
+Job Search, Job Detail, Application Tracker
+
+Profile/Resume
+
+Notifications
+
+Guest/Company Profile Page
+
+Mobile App Screens (if applicable)
+
+Recommended File Structure:
+text
+/src/
+  /components/
+    HeroSection.jsx
+    FeaturesSection.jsx
+    HowItWorks.jsx
+    TestimonialSection.jsx
+    CTASection.jsx
+    Footer.jsx
+    StatusBadge.jsx
+  /pages/
+    Landing.jsx
+    Login.jsx
+    SignupCandidate.jsx
+    ForgotPassword.jsx
+    OnboardingCandidate.jsx
+    DashboardCandidate.jsx
+    JobSearch.jsx
+    JobDetail.jsx
+    ApplicationTracker.jsx
+    ProfileResume.jsx
+    Notifications.jsx
+    CompanyProfilePublic.jsx
+  /mobile/
+    MobileHome.jsx
+    MobileJobs.jsx
+    MobileTracker.jsx
+    MobileNotifications.jsx
+    MobileProfile.jsx
+  /utils/
+    api.js
+    useUserContext.js
+2. Developer 2: HR Flow & Management Pages
+Responsible for:
+
+Auth (HR/Company)
+
+Onboarding (HR)
+
+HR Dashboard
+
+Post Job
+
+Jobs Management
+
+Applicants List
+
+Candidate Detail (HR View)
+
+Company Profile (HR)
+
+Settings for HR
+
+Recommended File Structure:
+text
+/src/
+  /components/
+    HRStatsCard.jsx
+    QuickActions.jsx
+    ApplicationsTable.jsx
+    JobForm.jsx
+    ApplicantCard.jsx
+    StatusDropdown.jsx
+    InternalNote.jsx
+    InterviewScheduleModal.jsx
+  /pages/
+    LoginHR.jsx
+    SignupHR.jsx
+    OnboardingHR.jsx
+    DashboardHR.jsx
+    PostJob.jsx
+    JobsManagement.jsx
+    ApplicantsList.jsx
+    CandidateDetailHR.jsx
+    CompanyProfileHR.jsx
+    SettingsHR.jsx
+  /utils/
+    apiHR.js
+    useHRContext.js
+3. Developer 3: Shared Infrastructure, Analytics & Settings
+Responsible for:
+
+Shared Settings and Notification pages
+
+Analytics Dashboard (HR)
+
+Shared UI theme and context
+
+All routing logic (react-router-dom)
+
+Authentication provider/context
+
+Utility hooks and components (status badges, icons)
+
+Bonus: Building out the mobile navigation/layout
+
+Recommended File Structure:
+text
+/src/
+  /components/
+    AnalyticsCharts.jsx
+    WordCloudSkills.jsx
+    TimeToHireMeter.jsx
+    ExportDataButton.jsx
+    FilterBar.jsx
+    NavBar.jsx
+    Sidebar.jsx
+    StatusBadge.jsx
+    IconButton.jsx
+    ThemeProvider.jsx
+  /pages/
+    AnalyticsDashboardHR.jsx
+    SettingsCommon.jsx
+    NotificationsSettings.jsx
+  /context/
+    AuthContext.js
+    UIThemeContext.js
+    NotificationContext.js
+  /hooks/
+    useFetchJobs.js
+    useStatusColors.js
+    useNotifications.js
+  /routes/
+    AppRoutes.jsx
